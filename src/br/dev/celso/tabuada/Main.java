@@ -2,20 +2,15 @@ package br.dev.celso.tabuada;
 
 import javax.swing.JFrame;
 
-import br.dev.celso.tabuada.model.Tabuada;
+import br.dev.celso.tabuada.gui.TelaTabuada;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		JFrame tela = new JFrame();
-		tela.setTitle("DS1MA");
-		tela.setSize(500, 600);
-		tela.setVisible(true);
-		
-		System.out.println(tela.getSize().height);
-		System.out.println(tela.getTitle());
-		
+		TelaTabuada tela = new TelaTabuada();
+		tela.criarTela("Tabuada DS1MA");
+	
 	}
 
 }
